@@ -1,0 +1,503 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.API\\Products.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.API\\Products.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.API\\Products.API.csproj",
+        "projectName": "Products.API",
+        "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.API\\Products.API.csproj",
+        "packagesPath": "C:\\Users\\Gaudi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gaudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\Products.Application.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\Products.Application.csproj"
+              },
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj"
+              },
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\Products.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\Products.Infrastructure.csproj"
+              },
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Security\\Products.Security.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Security\\Products.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\Products.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\Products.Application.csproj",
+        "projectName": "Products.Application",
+        "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\Products.Application.csproj",
+        "packagesPath": "C:\\Users\\Gaudi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gaudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\Products.Domain.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\Products.Domain.csproj"
+              },
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\Products.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\Products.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\Products.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\Products.Domain.csproj",
+        "projectName": "Products.Domain",
+        "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\Products.Domain.csproj",
+        "packagesPath": "C:\\Users\\Gaudi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gaudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj",
+        "projectName": "Products.Helpers",
+        "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj",
+        "packagesPath": "C:\\Users\\Gaudi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gaudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\Products.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\Products.Infrastructure.csproj",
+        "projectName": "Products.Infrastructure",
+        "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\Products.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Gaudi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gaudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\Products.Domain.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Domain\\Products.Domain.csproj"
+              },
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Security\\Products.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Security\\Products.Security.csproj",
+        "projectName": "Products.Security",
+        "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Security\\Products.Security.csproj",
+        "packagesPath": "C:\\Users\\Gaudi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gaudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\Products.Application.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Application\\Products.Application.csproj"
+              },
+              "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Gaudi\\Documents\\products-api-v2\\products-api-v2\\Products.Helpers\\Products.Helpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.10.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

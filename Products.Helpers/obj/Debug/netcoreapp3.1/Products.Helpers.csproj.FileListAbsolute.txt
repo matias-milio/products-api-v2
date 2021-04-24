@@ -1,0 +1,9 @@
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\bin\Debug\netcoreapp3.1\Products.Helpers.deps.json
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\bin\Debug\netcoreapp3.1\Products.Helpers.dll
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\bin\Debug\netcoreapp3.1\Products.Helpers.pdb
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\obj\Debug\netcoreapp3.1\Products.Helpers.csprojAssemblyReference.cache
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\obj\Debug\netcoreapp3.1\Products.Helpers.AssemblyInfoInputs.cache
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\obj\Debug\netcoreapp3.1\Products.Helpers.AssemblyInfo.cs
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\obj\Debug\netcoreapp3.1\Products.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\obj\Debug\netcoreapp3.1\Products.Helpers.dll
+C:\Users\Gaudi\Documents\Products.API\Products.API\Products.Helpers\obj\Debug\netcoreapp3.1\Products.Helpers.pdb
