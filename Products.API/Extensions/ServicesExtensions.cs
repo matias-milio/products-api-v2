@@ -16,6 +16,7 @@ using Products.Infrastructure.AppDbContext;
 using Products.Infrastructure.Implementations;
 using Products.Infrastructure.Intefaces;
 using Products.Security.Tokens;
+using System;
 using System.Linq;
 using System.Text;
 
@@ -54,11 +55,15 @@ namespace Products.API.Extensions
             return services;
         }
 
-        public static IServiceCollection AddControllersCustom(this IServiceCollection services)
+        public static IServiceCollection AddControllersCustom(this IServiceCollection services, IConfigurationSection tokenSettingsSection)
         {
+            bool useAuthenticatedControllers = Convert.ToBoolean(tokenSettingsSection["RequireToken"]);
             services.AddControllers(options => {
-                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-                options.Filters.Add(new AuthorizeFilter(policy));
+                if (useAuthenticatedControllers)
+                {
+                    var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                    options.Filters.Add(new AuthorizeFilter(policy));
+                }             
             }).AddFluentValidation(options => options.RegisterValidatorsFromAssemblyContaining<Application.Products.RequestModels.Create>());
 
             return services;
@@ -96,9 +101,10 @@ namespace Products.API.Extensions
 
         public static IServiceCollection AddRedis(this IServiceCollection services, IConfigurationSection cacheSettingSection)
         {
+           
             services.AddStackExchangeRedisCache(opt => opt.Configuration = cacheSettingSection["ConnectionString"]);
             services.Configure<CacheSettings>(cacheSettingSection);
-            services.AddScoped<ICacheManager, CacheManager>();
+            services.AddScoped<ICacheManager, CacheManager>();                     
             return services;
         }
     }

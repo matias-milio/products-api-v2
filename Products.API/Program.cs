@@ -1,17 +1,13 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Products.Infrastructure.AppDbContext;
 using Serilog;
-using Serilog.Formatting.Compact;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace Products.API
 {
@@ -25,7 +21,7 @@ namespace Products.API
                 .WriteTo.Seq("http://localhost:5341/")                
                 .CreateLogger();
 
-           var host = CreateHostBuilder(args).Build();
+            var host = CreateHostBuilder(args).Build();
 
             using var enviroment = host.Services.CreateScope();
             var services = enviroment.ServiceProvider;

@@ -22,7 +22,7 @@ namespace Products.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersCustom();
+            services.AddControllersCustom(Configuration.GetSection("TokenSettings"));
             services.AddDbContext<MyStoreDbContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("LocalConnectionString")));
             services.AddMediatR(typeof(Application.Products.Handlers.Get).Assembly);
             services.AddSwaggerGenCustom();
@@ -54,6 +54,11 @@ namespace Products.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(x => x
+              .AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader());
 
             app.UseAuthorization();
 
